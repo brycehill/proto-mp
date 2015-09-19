@@ -1,4 +1,4 @@
 import React from 'react'
-import App from './App'
+import routes from './routes'
 
-React.render(<App />, document.getElementById('root'))
+React.render(routes, document.body)
