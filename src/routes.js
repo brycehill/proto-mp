@@ -1,6 +1,6 @@
 import React from 'react'
 import { Router, Route, IndexRoute } from 'react-router'
-import App from './components/App'
+import App from './components/App/App'
 import About from './components/About'
 import Search from './components/Search'
 import Dashboard from './components/Dashboard'

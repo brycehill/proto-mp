@@ -5,7 +5,7 @@ module.exports = {
     entry: [
         'webpack-dev-server/client?http://0.0.0.0:8080', // WebpackDevServer host and port
         'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
-        './src/index.js' // Your appʼs entry point
+        './src/index' // Your appʼs entry point
     ],
 
     output: {
@@ -19,6 +19,10 @@ module.exports = {
             test: /\.jsx?$/,
             loaders: ['react-hot', 'babel'],
             include: path.join(__dirname, 'src'),
+            exclude: /node_modules/
+        }, {
+            test: /.css$/,
+            loader: 'style!css',
             exclude: /node_modules/
         }
       ]
