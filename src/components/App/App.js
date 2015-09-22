@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 
 require('./App.styl')
 
@@ -7,12 +8,9 @@ export default React.createClass({
     render() {
         return (
             <div>
-                <nav>
-                    <Link to='/'>Home</Link>
-                    <Link to='/search'>Search</Link>
-                    <Link to='/about'>About</Link>
-                </nav>
+                <Header />
                 {this.props.children}
+                <Footer />
             </div>
 
         )
