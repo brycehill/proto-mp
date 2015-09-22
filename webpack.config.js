@@ -21,8 +21,8 @@ module.exports = {
             include: path.join(__dirname, 'src'),
             exclude: /node_modules/
         }, {
-            test: /.css$/,
-            loader: 'style!css',
+            test: /.styl$/,
+            loader: 'style!css!stylus',
             exclude: /node_modules/
         }
       ]
