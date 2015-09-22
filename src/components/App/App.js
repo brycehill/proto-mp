@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-require('./App.css')
+require('./App.styl')
 
 export default React.createClass({
     render() {
