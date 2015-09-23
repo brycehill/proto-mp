@@ -7,9 +7,11 @@ require('./App.styl')
 export default React.createClass({
     render() {
         return (
-            <div>
+            <div className="container">
                 <Header />
-                {this.props.children}
+                <div className="content">
+                    {this.props.children}
+                </div>
                 <Footer />
             </div>
 
