@@ -1,11 +1,10 @@
-var webpack = require('webpack')
 var path = require('path')
 
 module.exports = {
+
     entry: [
-        'webpack-dev-server/client?http://0.0.0.0:8080', // WebpackDevServer host and port
-        'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
-        './src/index' // Your appʼs entry point
+        'webpack-dev-server/client?/',
+        './src/index'
     ],
 
     output: {
@@ -27,12 +26,15 @@ module.exports = {
         }
       ]
     },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin()
-    ],
 
     resolveLoader: {
         root: path.join(__dirname, 'node_modules')
-    }
+    },
 
+    devServer: {
+        historyApiFallback: true,
+        proxy: {
+            '*': 'http://localhost:9090'
+        }
+    }
 }
