@@ -1,5 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router'
 import request from 'superagent'
+
+require('./search.styl')
 
 class Search extends React.Component {
     // Don't like this, but...
@@ -31,17 +34,25 @@ class ListingTileList extends React.Component {
             return <ListingTile listing={listing} />
         })
         return (
-            <ul className="listingTiles">
+            <div className="listingTiles">
               {listingTiles}
-            </ul>
+            </div>
         )
     }
 }
 
 class ListingTile extends React.Component {
     render() {
+        var listingId = this.props.listing.id
         return (
-            <li>{this.props.listing.title}</li>
+            <div className="tile">
+                <h3 class="listingTitle">
+                    <Link to={`/listing/${listingId}`}>
+                        {this.props.listing.title}
+                    </Link>
+                </h3>
+                <p>{this.props.listing.description}</p>
+            </div>
         )
     }
 }
