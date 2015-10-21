@@ -12,10 +12,24 @@ class Search extends React.Component {
     }
 
     componentDidMount() {
+        this.execSearch();
+    }
+
+    execSearch() {
         request.get('http://localhost:3000/listings')
+            .query({ q: this.props.params.q })
             .end(function(err, res) {
                 this.setState({data: res.body})
             }.bind(this))
+
+    }
+
+    componentDidUpdate(prev) {
+        var old = prev.params.q
+        var newQ = this.props.params.q
+        if (old !== newQ) {
+            this.execSearch()
+        }
     }
 
     render() {
