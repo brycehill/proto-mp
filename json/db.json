@@ -2,11 +2,91 @@
   "listings": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "SMS Pro",
+      "description": "We make texting easy",
+      "mediaFiles": [
+        {
+          "url": ""
+        }
+      ],
+      "price": "",
+      "company": {},
+      "benefits": [
+        {},
+        {},
+        {}
+      ]
     },
     {
       "id": 2,
+      "title": "Cool Guyz Consulting",
+      "description": "We can consult with the best of 'em",
+      "mediaFiles": [
+        {
+          "url": ""
+        }
+      ],
+      "price": "",
+      "company": {},
+      "benefits": [
+        {},
+        {},
+        {}
+      ]
+    },
+    {
+      "id": 3,
+      "title": "SMB Lawers",
+      "description": "You know you'll need a lawyer, so...",
+      "mediaFiles": [
+        {
+          "url": ""
+        }
+      ],
+      "price": "",
+      "company": {},
+      "benefits": [
+        {},
+        {},
+        {}
+      ]
+    },
+    {
+      "id": 4,
+      "title": "MMS Pro",
+      "description": "We make media messages easy",
+      "mediaFiles": [
+        {
+          "url": ""
+        }
+      ],
+      "price": "",
+      "company": {},
+      "benefits": [
+        {},
+        {},
+        {}
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Hair Salon",
+      "description": "We make texting easy",
+      "mediaFiles": [
+        {
+          "url": ""
+        }
+      ],
+      "price": "",
+      "company": {},
+      "benefits": [
+        {},
+        {},
+        {}
+      ]
+    },
+    {
+      "id": 6,
       "title": "json-server",
       "author": "typicode"
     }
