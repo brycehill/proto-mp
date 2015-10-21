@@ -46,12 +46,12 @@ class ListingTile extends React.Component {
         var listingId = this.props.listing.id
         return (
             <div className="tile">
-                <h3 class="listingTitle">
+                <h3 className="listingTitle">
                     <Link to={`/listing/${listingId}`}>
                         {this.props.listing.title}
                     </Link>
                 </h3>
-                <p>{this.props.listing.description}</p>
+                <p>{this.props.listing.shortDescription}</p>
             </div>
         )
     }
